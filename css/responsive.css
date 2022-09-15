@@ -1,0 +1,65 @@
+/**responsee CSS **/
+
+@media screen and (max-width: 1008px) {
+
+ul {
+    display: block;
+    padding: 10px 0 10px 0;
+    margin-inline: auto;
+}
+
+.top-ul {
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    line-height: 3em;
+    margin-right: 0.625em;
+    margin-top: 0;
+    max-width: 100%;
+    text-align: right;
+    /*vertical-align: middle;*/
+}
+    a.logo {
+        display: block;
+        text-align: center;
+    }
+
+    header h1 {
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav-text {
+        font-size: 2.5em;
+        line-height: 1em;
+        padding-top: 1em;
+        text-align: center;
+    }
+
+    .text-central {
+    position: absolute;
+    color: #FFF;
+    font-size: 1em;
+    top: 0px;
+    left: 50px;
+    text-align: left;
+    overflow:auto;
+}
+    .top-nav ul {
+        float: none;
+        text-align: center;
+    }
+
+   .top-nav li a {
+        background: none repeat scroll 0 0 #162b4d;
+        border-top: 1px solid #0b192f;
+        color: #fff;
+        display: block;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
