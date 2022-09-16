@@ -54,6 +54,7 @@ header h1 {
 
 }
 
+
 .top-nav ul li {
   display: inline;
 }
@@ -226,11 +227,6 @@ border-radius: 0.25rem;
   /*font-size: 300;*/
 }
 
-/* ELIMINO EL MARGIN porque la imagen tiene el boton pegado al titulo
-.buttons { 
-  margin-bottom: 10px;
-}*/ 
-
 /*botones cards Colores tomados de boostrap */
 
 .btn-3 {
@@ -297,6 +293,7 @@ border-radius: 0.25rem;
   position: relative;
   margin-right: 10px;
   margin-left: 20px;
+  color: #E0E0E0;
 
 }
 
@@ -309,6 +306,7 @@ border-radius: 0.25rem;
   margin: 20px 20px;
 
 }
+
 
 /*************************************************************/
 /***********     SECTION CONTACT FORM        ****************/
@@ -398,11 +396,6 @@ h5 {
 /*************************************************************/
 /****         SECTION FOOTER                  ***************/
 /***********************************************************/
-
-
-
-/*footer 31 82 113*/
-
 
 
 footer {
