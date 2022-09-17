@@ -11,10 +11,11 @@
     .top-ul {
         color: #fff;
         display: block;
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.5em;
         margin-right: 0.625em;
         margin-top: 0;
+        padding-top: 0;
         max-width: 100%;
         /*vertical-align: middle;*/
     }
@@ -25,10 +26,17 @@
         padding-bottom: 0;
     }
 
+    .i-logo {
+        max-width: 15% !important;
+        max-height: 15% !important;
+    }
+
     header h1 {
         display: block;
         text-align: center;
         margin: 0px;
+        position: relative;
+        top: -0.5em;
     }
 
     .nav-text {
@@ -58,7 +66,7 @@
     }
 
     .top-nav li a {
-/*        background: none repeat scroll 0 0 #162b4d;
+        /*        background: none repeat scroll 0 0 #162b4d;
         border-top: 1px solid #0b192f;*/
         color: #fff;
         display: inline;
@@ -66,8 +74,6 @@
         font-size: 0.8em;
     }
 
-
-    .news-card,
     .news-card {
         width: 512px;
         background: #343a40;
@@ -90,8 +96,7 @@
 
     body {
         max-width: 100em;
-        justify-content: center;
-
+        justify-content: center
     }
 
     /*    ul {
@@ -104,10 +109,10 @@
         color: #fff;
         display: block;
         font-size: 1.em;
-        line-height: 2.5em;
+        line-height: 2em;
         margin-right: 0.625em;
         max-width: 100%;
-        text-align: right;
+        padding: 0;
         /*vertical-align: middle;*/
     }
 
@@ -116,8 +121,6 @@
         margin-bottom: 0px;
 
     }
-
-    ;
 
     a.logo {
         display: block;
@@ -169,6 +172,36 @@
 
     }
 
+    .btn-1 {
+        padding: .375rem .5rem .2rem .5rem;
+        border: 1px solid #FFF;
+        border-radius: .25rem;
+        background-color: transparent;
+        height: 30px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .btn-1:hover,
+    .btn-2:hover {
+        border-color: #28a745;
+        background-color: transparent
+            /*#353A40*/
+        ;
+
+    }
+
+    .btn-2 {
+        padding: .375rem .5rem .2rem .5rem;
+        border: 1px solid #28a745;
+        border-radius: .25rem;
+        background-color: #28a745;
+        height: 30px;
+        color: #fff;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
     footer {
         max-width: 100%;
         text-align: center;
@@ -182,10 +215,83 @@
 }
 
 @media screen and (max-width: 576px) {
-    
-html {
-    display: none;
-}
 
-    
+    body {
+        width: 360px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    .title-form {
+        color: #353A40;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    form.custom-form {
+        text-align: center;
+        display: inline-block;
+        width: 380px;
+    }
+
+    .form-content {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        position: relative;
+        font-weight: 400;
+        color: #343a40;
+        font-size: .9em;
+        margin-bottom: 5px;
+    }
+
+    .form-data {
+        padding-bottom: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+        border: 1px solid #E0E0E0;
+        border-radius: 0.25rem;
+        background: none;
+        height: 25px;
+        margin: 0 5px 0 5px;
+        padding: 0 5px 0 5px;
+    }
+
+    input::placeholder {
+        color: #899285;
+    }
+
+    textarea {
+        border: 1px solid #E0E0E0;
+        border-radius: 0.25rem;
+        width: 360px;
+        background: none;
+        margin: 0 5px 0 5px;
+        padding: 0 5px 0 5px;
+    }
+
+    .btn-7 {
+        padding: .15rem .5rem;
+        border: 2px solid #a0c934;
+        border-radius: .25rem;
+        background-color: #a0c934;
+        color: #FFF;
+        width: 370px;
+        height: 30px;
+    }
 }
