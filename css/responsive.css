@@ -31,12 +31,9 @@
         max-height: 15% !important;
     }
 
-    header h1 {
-        display: block;
-        text-align: center;
-        margin: 0px;
-        position: relative;
-        top: -0.5em;
+    .logo-title {
+        display: none;
+        visibility: hidden;
     }
 
     .nav-text {
@@ -50,9 +47,9 @@
         position: absolute;
         color: #FFF;
         font-size: 1em;
-        top: 0px;
+        top: 120px;
         left: 50px;
-        text-align: left;
+        text-align: justify;
         overflow: auto;
     }
 
@@ -74,16 +71,8 @@
         font-size: 0.8em;
     }
 
-    .news-card {
-        width: 512px;
-        background: #343a40;
-        height: 320px;
-    }
-
-    .img-info {
-        position: absolute;
-        width: 512px;
-        height: 320px;
+    .border-card {
+        border-radius: 0em 0em 1em 1em;
     }
 
     footer {
@@ -94,44 +83,59 @@
 
 @media screen and (max-width: 720px) {
 
+    html,
     body {
-        max-width: 100em;
-        justify-content: center
+        width: 100%;
+        overflow-x: hidden;
     }
 
-    /*    ul {
-        display: block;
-        padding: 10px 0 10px 0;
-        margin-inline: auto;
-    }*/
-
     .top-ul {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: #353A40;
         color: #fff;
         display: block;
         font-size: 1.em;
         line-height: 2em;
-        margin-right: 0.625em;
-        max-width: 100%;
-        padding: 0;
-        /*vertical-align: middle;*/
+        margin-top: 80px;
+    }
+
+    .i-logo {
+        max-height: 80% !important;
+    }
+
+    */ body {
+        max-width: 100em;
+        justify-content: center
+    }
+
+    ul {
+        display: block;
+        /*        padding: 10px 0 10px 0;*/
+        margin-inline: auto;
     }
 
     .top-ul .right {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0;
+        padding: 0;
 
     }
 
     a.logo {
+        position: fixed;
+        z-index: 200;
         display: block;
         text-align: center;
+        background-color: #353A40;
+        width: 100%;
+        height: 80px;
     }
 
     header h1 {
         display: block;
         text-align: center;
         margin: 0px;
-
     }
 
     .nav-text {
@@ -141,14 +145,23 @@
         text-align: center;
     }
 
+    .img-big {
+        padding: 270px 0px 0px 0px;
+    }
+
     .text-central {
         position: absolute;
         color: #FFF;
         font-size: 0.8em;
-        top: 0px;
-        left: 50px;
-        text-align: left;
         overflow: hidden;
+        padding: 180px 0 0 0;
+        width: 320px;
+        left: 25px;
+        margin: 0;
+    }
+
+    .text-central h2 {
+        margin-bottom: 5px;
     }
 
     .top-nav ul {
@@ -163,13 +176,24 @@
         display: block;
     }
 
+    .news-card {
+        width: 512px;
+        background: #343a40;
+        height: 320px;
+    }
+
+    .img-info {
+        position: absolute;
+        width: 512px;
+        height: 320px;
+    }
+
     .news-text {
         position: relative;
         margin-right: 10px;
         margin-left: 20px;
         color: #E0E0E0;
         font-size: 0.8em;
-
     }
 
     .btn-1 {
@@ -216,18 +240,44 @@
 
 @media screen and (max-width: 576px) {
 
-    body {
-        width: 360px;
-        margin: 0 auto;
-        justify-content: center;
-    }
-
     h1 {
         font-size: 1.5em;
     }
 
     h4 {
         font-size: 0.8em;
+    }
+
+    a.logo {
+        height: 60px;
+    }
+
+    .top-ul {
+        margin-top: 60px;
+    }
+
+    .img-big {
+        padding: 240px 0px 0px 0px;
+    }
+
+    .text-central {
+        padding: 120px 0px 0px 0px;
+        width: 300px;
+    }
+
+    .img-info {
+        width: 320px;
+        height: 200px;
+    }
+
+    .news-card {
+        width: 320px;
+        height: 220px;
+    }
+
+    .news-h1 {
+        padding-top: 0px;
+        padding-bottom: 5px;
     }
 
     .title-form {
@@ -294,4 +344,97 @@
         width: 370px;
         height: 30px;
     }
+
+    .footer-ul {
+        display: none;
+    }
+
+    .hidden {
+        display: inline-block;
+        visibility: visible;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+    .i-logo {
+        max-width: 80% !important;
+    }
+
+    .text-central h2 {
+        font-size: 0.8em;
+        margin: 0px;
+        padding-bottom: 2px;
+        width: 230px;
+        font-weight: 300;
+    }
+
+    .btn-1,
+    .btn-2 {
+        font-size: 12px;
+    }
+
+    form.custom-form {
+        display: inline-block;
+        text-align: center;
+        width: 220px;
+    }
+
+    /*    .form-content h4 {
+        display: inline;
+        width: 200px;
+        text-align: center;
+    }*/
+
+    .form-data {
+        padding-bottom: 1em;
+        display: inline;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+        border: 1px solid #E0E0E0;
+        border-radius: 0.25rem;
+        background: none;
+        width: 200px;
+        height: 25px;
+        margin: 5px 5px 5px 5px;
+        padding: 0 5px 0 5px;
+    }
+
+    input::placeholder {
+        color: #899285;
+        font-size: 12px;
+    }
+
+    textarea {
+        border: 1px solid #E0E0E0;
+        border-radius: 0.25rem;
+        width: 200px;
+        background: none;
+        margin: 0 5px 0 5px;
+        padding: 0 5px 0 5px;
+        font-size: 10px;
+    }
+
+    h5 {
+        padding-bottom: 0.5em;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .btn-7 {
+        padding: .15rem .5rem;
+        border: 2px solid #a0c934;
+        border-radius: .25rem;
+        background-color: #a0c934;
+        color: #FFF;
+        width: 210px;
+        height: 25px;
+    }
+
 }

@@ -13,19 +13,23 @@ body {
 /****   TOP NAV + HEADER + LOGO + NAV MENU RIGHT   ************/
 /*************************************************************/
 
-
 nav {
+
   background: none repeat scroll 0 0 #353A40;
-  position: relative;
-}
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  max-width: 80em;
+
+  }
 
 ul {
-  display: block;
+ display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: -300px;
-  margin-inline-end: 10px;
-  padding-inline-start: 40px;
+  margin-inline-end: 30px;
+ padding-inline-start: 40px;
   font-weight: 400;
 }
 
@@ -61,7 +65,7 @@ header h1 {
 
 .top-nav ul li a {
   background: none repeat scroll 0 0;
-  margin-inline: 10px;
+  margin-inline: 7px;
   min-width: 100%;
   /*color: #6c757d;*/
   color: #93979a;
@@ -70,7 +74,7 @@ header h1 {
 
 .line {
   margin: 0 auto;
-  padding: 0 0.625em;
+  /*padding: 0 0.625em;*/
 }
 
 .top-nav ul li .buy {
@@ -78,7 +82,7 @@ header h1 {
 }
 
 .top-ul {
-  list-style-type: none;
+ list-style-type: none;
   display: inline-block;
   margin-top: 2.5em;
 }
@@ -129,7 +133,7 @@ a:active {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  padding: 0 0.625em;
+  /*padding: 0 0.625em;*/
 }
 
 .img-size {
@@ -442,4 +446,8 @@ footer {
   margin-inline: 20px;
   color: #fff;
   font-weight: 400;
+}
+
+.hidden {
+  display: none;
 }
