@@ -186,7 +186,9 @@ a:active {
 
 .btn-1:hover,
 .btn-2:hover,
-.btn-7:hover {
+.btn-7:hover,
+.btn-8:hover,
+.btn-9:hover {
   border-color: #03ff3e;
   background-color: #28a745;
 }
@@ -225,6 +227,16 @@ span {
   margin-bottom: 1.6em;
 }
 
+.cards-tickets {
+  padding-top: 300px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .card-item {
   width: 300px;
   border: 1px solid #E0E0E0;
@@ -238,6 +250,11 @@ span {
 .card-content {
   margin: 1rem;
   text-align: left;
+}
+
+.card-content-tickets{
+  text-align: center;
+  margin: 2rem;
 }
 
 .card-title {
@@ -280,9 +297,23 @@ span {
   color: #FFF;
 }
 
+.btn-10 {
+  background-color: #fff;
+  border: 1px solid #7dcbd7;
+}
+
+.btn-10:hover {
+  border-color: #f6ca47;
+  background-color: #fcfcfc;
+}
+
 .card-text {
   word-spacing: -1px;
   font: status-bar;
+}
+
+.ticket-value {
+  color:#000;
 }
 
 /********************************************************/
@@ -360,13 +391,19 @@ h4 {
   margin-bottom: 10px;
 }
 
-.form-data {
+.form-data, .form-select {
   padding-bottom: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-input {
+
+.form-data-mail {
+  padding-bottom: 1em;
+  display: grid;
+}
+
+input, select {
   border: 1px solid #E0E0E0;
   border-radius: 0.25rem;
   background: none;
@@ -374,6 +411,11 @@ input {
   margin: 0 10px 0 10px;
   padding: 0 10px 0 10px;
 }
+
+select {
+  padding: 0 !important;
+}
+
 
 input::placeholder {
   color: #899285;
@@ -413,6 +455,18 @@ h5 {
   height: 40px;
 }
 
+.btn-8, .btn-9 {
+  padding: .15rem .5rem;
+  border: 2px solid #a0c934;
+  background-color: #a0c934 !important;
+  color: #FFF;
+  border-radius: 0.25rem;
+  background: none;
+  height: 25px;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
 /*************************************************************/
 /****         SECTION FOOTER                  ***************/
 /***********************************************************/
@@ -428,7 +482,8 @@ footer {
   list-style-type: none;
   display: flex;
   margin: auto;
-  padding: 40px;
+  padding: 40px 0px 0px 0px;
+
   justify-content: center;
   text-align: center;
   max-width: 50px;
@@ -449,4 +504,27 @@ footer {
 
 .hidden {
   display: none;
+}
+
+/************************************************/
+/******** FORM STYLE VALIDATE ******************/
+/**********************************************/
+
+.error-form {
+  border:3px solid #bb2929;
+  background-color: #f2f5f7;
+  color: #bb2929;
+}
+
+.input-error,
+.input-error-correo,
+.input-error-cantidad {
+  display: none;
+}
+
+.input-error-activo {
+  display: block;
+  color: indianred;
+  margin: 0px;
+  padding: 0px;
 }
