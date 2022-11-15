@@ -1,0 +1,167 @@
+<!--Trabajo Práctico Integrador JS
+
+Deberán replicar la siguiente sección (es una sección que se debe agregar al integrador front-End) al presionar en el enlace “tickets”.
+
+Deberá contener la funcionalidad en Javascript, al momento de presionar el botón “Resumen”, deberá mostrar en la sección “Total a Pagar: $”, 
+el monto correspondiente a la cantidad de tickets a comprar con el descuento correspondiente dependiendo la categoría seleccionada, existen 3 categorías, Estudiante, Trainee, Junior
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencias Buenos Aires</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700&amp;subset=latin,latin-ext"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- TOP NAV WITH LOGO IMG-->
+    <header>
+        <div class="line">
+            <nav>
+                <div class="top-nav">
+                    <a class="logo" href="index.html"> <img class="i-logo" src="img/logo.png" alt="codo-codo">
+                        <h1 class="logo-title">Conf Bs As</h1>
+                    </a>
+                    <ul class="top-ul right">
+                        <li class="active-item">
+                            <a href="index.html">La conferencia</a>
+                        </li>
+                        <li>
+                            <a href="#">Los oradores</a>
+                        </li>
+                        <li>
+                            <a href="#">El lugar y la fecha</a>
+                        </li>
+                        <li>
+                            <a href="#">Conviertete en orador</a>
+                        </li>
+                        <li>
+                            <a class="buy" href="tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                    <!--<div class="list list-right">
+                        <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>   futuro toggle-menu              -->
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN SECTION-->
+
+    <!--ARTICLES OR CARDS-->
+
+    <section class="cards-section">
+        <div class="cards-header">
+        </div>
+        <div class="cards-tickets">
+            <button class="card-item-ticket btn-10">
+                <div class="body-card">
+                    <h1>Estudiante</h1>
+                </div>
+                <div class="card-content-tickets">
+                    <div><h4>Tienen un descuento</h4></div>
+                    <div class="desc"><h2>80%</h2></div>
+                    <div class="card-text">*presentar documentación</div>
+                </div>
+            </button>
+            <button class="card-item-ticket btn-10">
+                <div class="body-card">
+                    <h1>Trainee</h1>
+                </div>
+                <div class="card-content-tickets">
+                    <div><h4>Tienen un descuento</h4></div>
+                    <div class="desc"><h2>50%</h2></div>
+                    <div class="card-text">*presentar documentación</div>
+                </div>
+            </button>
+            <button class="card-item-ticket btn-10">
+
+                <div class="body-card">
+                    <h1>Junior</h1>
+                </div>
+                <div class="card-content-tickets">
+                    <div><h4>Tienen un descuento</h4></div>
+                    <div class="desc"><h2>15%</h2></div>
+                    <div class="card-text">*presentar documentación</div>
+                    <div class="button"></div>
+                </div>
+            </button>
+        </div>
+
+    </section>
+    <!--BUT TICKETS-->
+
+    <div class="form" id="form">
+        <h4 class="title-form"> <span>VENTA</h4>
+        <div class="form-content">
+            <h1 class="ticket-value">VALOR DEL TICKET $ 200</h1>
+            <form class="custom-form" action="">
+                <div class="form-data"><input class="nombre" placeholder="Nombre" id="nombre" type="text" />
+                    <input class="apellido" placeholder="Apellido" id="apellido" type="text" />
+                </div>
+
+                <div class="form-data-mail"><input placeholder="correo" name="correo" id="correo" type="text"/>
+                </div>
+                <div class="form-data"><input name="" placeholder="cantidad" id="cantidad" type="text" />
+                    <select class="form-select" id="select" aria-label="">
+                    <!--   <option selected>Estudiante</option>-->
+                        <option Selected value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+                <p class="input-error">"El nombre y el apellido deben ser solo caracteres, como maximo 30"</p>
+                <p class="input-error-correo">"Ingrese un formato correo electrónico válido"</p>
+                <p class="input-error-cantidad">"Ingrese una cantidad válida, debe ser entre 1 y 99 tickets"</p>
+                <h5>Total a Pagar</h5>
+                <div class="form-data">
+                <button class="btn-8" type="submit" onclick = "datosCompra">Borrar</button>
+                <button class="btn-9" type= "submit" >Resumen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer>
+        <button class="hidden btn-4">Preguntas frecuentes y mas...</button>
+        <ul class="footer-ul">
+            <li>
+                <a href="#">Preguntas Frecuentes</a>
+            </li>
+            <li>
+                <a href="#">contáctanos</a>
+            </li>
+            <li>
+                <a href="#">Prensa</a>
+            </li>
+            <li>
+                <a href="#">Conferencias</a>
+            </li>
+            <li>
+                <a href="#">Términos y condiciones</a>
+            </li>
+            <li>
+                <a href="#">Privacidad</a>
+            </li>
+            <li>
+                <a href="#">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+<script src="Js/main.js"></script>
+</body>
+
+</html>
