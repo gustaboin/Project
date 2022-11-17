@@ -88,21 +88,53 @@ form.addEventListener('submit', (e) => {
                 let cantidad = document.getElementById('cantidad').value;
                 let selector = document.getElementById('select').value;          
     console.log(nombre, apellido, correo, cantidad, selector);
-     //datosCompra();
-
-/*    if(nombres && correo && cantidad  && select) {
-        form.reset();
-    }*/
 });
 
-//form.addEventListener("click", (e) ={
-  //  
-//})
+//************************************************//
+//******** CALCULO PARA FORMULARIO **************//
+//**********************************************//
 
-/*
-function obtenerDatos(){
-let nombre = document.getElementsById('nombre').value;
-let apellido = document.getElementsById('apellido').value;
-alert(nombre + " "+ apellido);
-console.log(nombre + " "+ apellido);
-}*/
+
+const btnResume = document.getElementById("btnResume");
+const btnResult = document.getElementById("calculado");
+
+const ticket = 200;
+const student = 0.2; 
+const trainee = 0.5; 
+const junior = 0.85; 
+
+function cant () {
+    let cant = document.getElementById("cantidad").value;
+    return cant;
+}
+
+function category()  {
+    let cat = document.getElementById("select").value;
+    return cat;
+}
+
+
+function cost(){
+    if (cant () == 0) {
+        console.log("La cantidad debe ser mayor a cero");
+    } else {
+        if (category() == 1 ){
+            total = ticket * cant () * student;
+        } else if (category() == 2) {
+            total = ticket * cant() * trainee;
+        } else {
+            total = ticket * cant() * junior;
+        }
+    }
+    return total;
+}
+
+
+function resumen(e) {
+    e.preventDefault();
+    total = cost();
+    btnResult.innerHTML = `Total a pagar: $ ${total}`;
+
+}
+
+btnResume.onclick = resumen;
