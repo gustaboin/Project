@@ -528,3 +528,12 @@ footer {
   margin: 0px;
   padding: 0px;
 }
+
+.form-control {
+background-color: #CBE5FE;
+border: 1px solid #563d7c26;
+border-radius: 0.25rem;
+height: 40px;
+margin: 0 10px 10px 10px;
+padding: 0 10px 10px 10px;
+}
