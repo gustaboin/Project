@@ -121,13 +121,15 @@ el monto correspondiente a la cantidad de tickets a comprar con el descuento cor
                         <option value="3">Junior</option>
                     </select>
                 </div>
+                <div class="container form-control p-3" id="dResultado">
+                    <p class="h5"> <h5 id="calculado">Total a pagar: $ </h5><span id="resultado"></span> </p>
+                </div>
                 <p class="input-error">"El nombre y el apellido deben ser solo caracteres, como maximo 30"</p>
                 <p class="input-error-correo">"Ingrese un formato correo electrónico válido"</p>
                 <p class="input-error-cantidad">"Ingrese una cantidad válida, debe ser entre 1 y 99 tickets"</p>
-                <h5>Total a Pagar</h5>
                 <div class="form-data">
-                <button class="btn-8" type="submit" onclick = "datosCompra">Borrar</button>
-                <button class="btn-9" type= "submit" >Resumen</button>
+                <button id="reset" class="btn-8" type="reset" >Borrar</button>
+                <button id="btnResume" class="btn-9" type= "submit" >Resumen</button>
                 </div>
             </form>
         </div>
