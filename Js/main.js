@@ -116,7 +116,7 @@ function category()  {
 
 
 function cost(){
-    if (cant () == 0 || cant() > 99) {
+    if (cant () <= 0 || cant() > 99) {
         //document.getElementById('cantidad').classList.add('error-form');
         document.querySelector('.input-error-cantidad').style.background = 'pink';
 
